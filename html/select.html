@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록 선택 태그</title>
+  </head>
+  <body>
+    <form action="register.jsp" method="post">
+      <fieldset>
+        <legend>수강 신청</legend>
+        <p>
+          <!--  -->
+          <label for="cid">학과 번호</label>
+          <!-- readonly 읽기 전용 수정 불가 -->
+          <input type="text" id="cid" name="cid" value="c1234" readonly />
+        </p>
+        <p>
+          <label for="major">학과</label>
+          <select name="major" id="major">
+            <option value="software" selected>소프트웨어학과</option>
+            <option value="marchain">기계공학과</option>
+            <option value="electronic">전기전자공학과</option>
+            <option value="architecture">건축공학과</option>
+          </select>
+        </p>
+      </fieldset>
+      <div>
+        <button type="submit">신청하기</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -7,14 +7,14 @@
   </head>
   <body>
     <h2>설문조사</h2>
-    <form action="">
+    <form action="pull_php" method="post">
       <p>
-        <label>이름</label>
+        <label for="name">이름</label>
         <input
           type="text"
           name="id"
           autofocus
-          required="required"
+          required autofocus
           placeholder="이름을 입력하세요."
         />
       </p>
@@ -22,8 +22,8 @@
       <p>
         <label>이메일</label>
         <input
-          type="text"
-          name="e-mail"
+          type="email"
+          name="email"
           autofocus
           required="required"
           placeholder="이메일일을 입력하세요."
@@ -53,6 +53,7 @@
           required 
         ></textarea>
         <input type="submit" value="제출" />
+        <input type="reset" value="취소" />
       </p>
     </form>
   </body>
