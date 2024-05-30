@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판 글쓰기</title>
+  </head>
+  <body>
+    <h2>글쓰기</h2>
+    <form action="write.jsp" method="post">
+      <p>
+        <input
+          type="text"
+          name="title"
+          size="35"
+          placeholder="제목을 입력해주세요"
+          required
+        />
+      </p>
+      <p>
+        <!-- textarea 여러 줄 생성 rows = 행 수  cals = 열 수-->
+        <!-- rows =5 보이는 줄이 5개 -->
+        <!-- textarea 간격을 떨어뜨리면 커서가 다르게 위치 -->
+        <textarea
+          name="text"
+          rows="5"
+          cols="40"
+          placeholder="내용을 입력하세요."
+          required 
+        ></textarea>
+      </p>
+
+      <p>
+        <input type="file" name="uploadFile" />
+        <div>
+            <!-- reset 등록 초기화 -->
+            <input type="submit" value="등록" />
+            <input type="reset" value="취소" />
+        </div>
+      </p>
+    </form>
+  </body>
+</html>

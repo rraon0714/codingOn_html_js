@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택 버튼(radio)과 체크 버튼(checkbox)</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- filedset: 테두리 생성, legend: 제목 생성 -->
+      <fieldset>
+        <legend>성별</legend>
+        <p>당신의 성별을 선택하세요.</p>
+        <!-- input type = radio의 경우 name 속성을 동일 시 하게 입력해야 하나만 선택 가능 아닐 시 복수 선택 -->
+        <!-- label의 경우 동그라미 칸을 체크하지 않아도 체크 가능 -->
+        <!-- 체크해서 submit으로 제출 시 value = server에서 보여주는 것-->
+        <!-- checked 홈페이지 접속 시 자동 체크 -->
+        <label
+          ><input type="radio" name="gender" value="male" checked />남성</label
+        >
+        <label><input type="radio" name="gender" value="female" />여성</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>취미</legend>
+        <p>당신의 취미를 선택하세요(복수 선택 가능)</p>
+        <label
+          ><input type="checkbox" name="hobby" value="movie" />영화 감상</label
+        >
+        <label><input type="checkbox" name="hobby" value="game" />게임</label>
+        <label><input type="checkbox" name="hobby" value="sports" />운동</label>
+      </fieldset>
+
+      <div>
+        <!-- <button type="submit">전송</button> -->
+        <!-- value = 이름 -->
+        <input type="submit" value="가입" />
+      </div>
+    </form>
+  </body>
+</html>

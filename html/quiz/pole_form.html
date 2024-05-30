@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문 조사</title>
+  </head>
+  <body>
+    <h2>설문조사</h2>
+    <form action="">
+      <p>
+        <label>이름</label>
+        <input
+          type="text"
+          name="id"
+          autofocus
+          required="required"
+          placeholder="이름을 입력하세요."
+        />
+      </p>
+
+      <p>
+        <label>이메일</label>
+        <input
+          type="text"
+          name="e-mail"
+          autofocus
+          required="required"
+          placeholder="이메일일을 입력하세요."
+        />
+      </p>
+      <p>
+        <h4>나이</h4>
+        <label><input type="radio" name="age" value="10genration" checked />10대</label>
+        <label><input type="radio" name="age" value="20genration" />20대</label>
+        <label><input type="radio" name="age" value="30genration" />30대</label>
+        <label><input type="radio" name="age" value="40genration" />40대</label>
+        <label><input type="radio" name="age" value="50genration" />50대</label>
+        <label><input type="radio" name="age" value="60genration" />60대</label>
+      </p>
+      <p>
+        <h4>원하는 강의(복수응답가능합니다.)</h4>
+        <label><input type="checkbox" name="language" value="html" checked/>html</label>
+        <label><input type="checkbox" name="language" value="javascript" />javascript</label>
+        <label><input type="checkbox" name="language" value="css" />css</label>
+      </p>
+      <p>
+        <textarea
+          name="content"
+          rows="10"
+          cols="100"
+          placeholder="하고 싶은 말을 써주세요:)"
+          required 
+        ></textarea>
+        <input type="submit" value="제출" />
+      </p>
+    </form>
+  </body>
+</html>
