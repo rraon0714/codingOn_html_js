@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>색상 투명도</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 100);
+      }
+      /* rgb(0,0,0,1) alpha = 1일 경우 불투명, alpha = 0 투명*/
+      #logo1 {
+        color: rgba(255, 255, 255, 1);
+      }
+      #logo2 {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      #logo3 {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      #logo4 {
+        color: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="logo1">codingOn</h1>
+    <h1 id="logo2">codingOn</h1>
+    <h1 id="logo3">codingOn</h1>
+    <h1 id="logo4">codingOn</h1>
+  </body>
+</html>

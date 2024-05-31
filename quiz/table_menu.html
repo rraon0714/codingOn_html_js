@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴 표 만들기</title>
+    <style>
+      table {
+        width: 400px;
+        border: 1px solid gray;
+        border-collapse: collapse;
+      }
+      /*, 그룹 선택 동일한 속성을 똑같이 적용할 때*/
+      th,
+      td {
+        border: 1px solid gray;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>메뉴판</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>음료</th>
+          <th>가격</th>
+          <th>이미지</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">커피류</td>
+          <td>아메리카노</td>
+          <td>4200원</td>
+          <td><img src="americano.jpg" width="100" height="100" /></td>
+        </tr>
+
+        <tr>
+          <td>커피라떼</td>
+          <td>4800원</td>
+          <td><img src="cafelatte.png" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2">주스류</td>
+          <td>딸기주스</td>
+          <td rowspan="2">5000원</td>
+          <td><img src="berry.jpg" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td>망고주스</td>
+          <td><img src="mango.jpg" width="100" height="100" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+h2 {
+  color: red;
+  /*color: #ff0000*/
+}
+
+#p1 {
+  background-color: yellow;
+}
+
+#p2 {
+  font-family: 바탕체;
+  line-height: 2;
+}
+
+.coffee {
+  font-weight: bold;
+}
