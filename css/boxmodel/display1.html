@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바깥 여백 : margin</title>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        /* display: inline-block 수평으로 배치*/
+        /* 기본 값 display: block 수직으로 배치*/
+        display: inline-block;
+      }
+      #box1 {
+        background-color: red;
+        /* top right bottom left */
+        /* box 1 -> margin 20px < box2-> margin 30 중첩된 경우 box2의 margin이 적용 */
+        margin: 20px;
+      }
+      #box2 {
+        background-color: green;
+        margin: 30px 20px;
+      }
+      #box3 {
+        background-color: blue;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+  </body>
+</html>

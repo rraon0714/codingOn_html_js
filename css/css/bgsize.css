@@ -1,0 +1,33 @@
+div {
+  width: 400px;
+  height: 400px;
+  /* 16진수로 표현 */
+  border: 1px solid #000000;
+  /* 파일 찾기할 때 상위 폴더에 있을 경우 .. 두 개 */
+  background: url(../images/watermelon.jpg) no-repeat;
+}
+/* 원본이 사각형 모양으로 잘림 */
+#bg1 {
+  background-size: auto;
+}
+/* 고정 크기가 300px로 축소되어 보임 */
+#bg2 {
+  background-size: 300px;
+}
+
+/* 가변 비율로 축소되어서 보임 */
+#bg3 {
+  /* 400px * 80%  */
+  background-size: 80%;
+  background-position: bottom left;
+}
+
+/* 이미지가 비율대로 축소됨 */
+#bg4 {
+  background-size: contain;
+}
+
+/* 이미지를 박스 크기만큼 꽉 채우고 나머지는 짤림 */
+#bg5 {
+  background-size: cover;
+}
