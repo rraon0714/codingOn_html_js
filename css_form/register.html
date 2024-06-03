@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수강 신청 중</title>
+    <link rel="stylesheet" href="../css/css/register.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form action="/register" method="post">
+        <fieldset>
+          <legend>수강 신청</legend>
+          <ul>
+            <li>
+              <label for="classId">학과 번호</label>
+              <input type="text" id="classId" name="classId" />
+            </li>
+            <li>
+              <label for="major">학과</label>
+              <select name="major" id="">
+                <option value="software">소프트웨어학과</option>
+                <option value="electronic">전기공학과</option>
+                <option value="archit">건축공학과</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <div>
+          <input type="submit" value="신청하기"></input>
+          <input type="reset" value="취소하기"></input>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
