@@ -4,15 +4,24 @@ ul li {
 }
 
 #container {
-  width: 1000px;
-  margin: 0 auto;
+  width: 800px;
+  margin: 50px auto;
 }
 
 fieldset {
   margin-bottom: 10px;
 }
 
+ul li label {
+  width: 100px;
+  float: left;
+}
+
+select {
+  width: 150px;
+  height: 25px;
+}
+
 form {
-  width: 400px;
-  margin: 0 auto;
+  width: 500px;
 }

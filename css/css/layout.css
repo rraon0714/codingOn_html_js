@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  /*width에 해당하는 것은 테두리 패딩*/
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+
+section {
+  width: 650px;
+  height: 600px;
+  border: 1px solid #ccc;
+  float: left;
+  background-color: aquamarine;
+}
+
+aside {
+  width: 320px;
+  height: 600px;
+  border: 1px solid #ccc;
+  float: right;
+}
+
+footer {
+  /* width: 978px; */
+  width: 1000px;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid #ccc;
+  clear: both;
+}

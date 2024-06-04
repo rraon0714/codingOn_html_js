@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과일 주문하기</title>
+    <style>
+      form {
+        width: 500px;
+      }
+      form ul li {
+        list-style: none;
+        margin: 16px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>참외 수량 선택</legend>
+        <ul>
+          <li>
+            <label for="home">가정용 2kg</label>
+            <input
+              type="number"
+              name="home"
+              id="home"
+              min="0"
+              max="2"
+              value="1"
+            />
+            개(최대5개)
+          </li>
+          <li>
+            <label for="home2">가정용 3kg</label>
+            <input
+              type="number"
+              name="home2"
+              id="home2"
+              min="0"
+              max="3"
+              value="1"
+            />
+            개(최대5개)
+          </li>
+          <li>
+            <input type="submit" value="주문하기" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

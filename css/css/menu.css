@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  /* padding 40이 자동적으로 생성되기 때문에 */
+  padding: 0;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 80px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 20px;
+}
+
+ul li a {
+  color: white;
+  /* 아래 밑줄 삭제 */
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+section {
+  margin: 20px;
+}

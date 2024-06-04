@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav bar 만들기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        /*display: inline-block;*/
+        float: left;
+        margin: 10px;
+        border-top: 2px solid #ccc;
+        padding: 5px 10px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      ul li:hover {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">한식</a></li>
+        <li><a href="#">중식</a></li>
+        <li><a href="#">일식</a></li>
+        <li><a href="#">양식</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
