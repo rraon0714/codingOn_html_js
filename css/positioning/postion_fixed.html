@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position 속성 예제</title>
+    <style>
+      #content {
+        width: 600px;
+      }
+      #fix {
+        /*width: 80px;
+        height: 80px;
+        background-color: green;*/
+        background: url("../images/berry.jpg");
+        position: fixed;
+        top: 50px;
+        right: 50px;
+      }
+      body {
+        height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <p>
+        fixed 값을 사용하는 요소 역시 absolute 값을 사용하는 요소처럼 문서
+        속성과는 상관없이 요소를 결정하지만, 기준이 되는 요소가 부모 요소가
+        아니라 브라우저 창이 기준이 된다.
+      </p>
+    </div>
+    <div id="fix"></div>
+  </body>
+</html>

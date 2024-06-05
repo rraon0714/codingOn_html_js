@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform(변형) 속성</title>
+    <style>
+      div.a {
+        width: 150px;
+        height: 80px;
+        background-color: greenyellow;
+      }
+      div.b {
+        width: 150px;
+        height: 80px;
+        background-color: greenyellow;
+        transform: rotate(20deg);
+      }
+      div.c {
+        width: 150px;
+        height: 80px;
+        background-color: greenyellow;
+        /* translate x, y축 이동*/
+        transform: translatey(50px);
+      }
+      div.d {
+        width: 150px;
+        height: 80px;
+        background-color: greenyellow;
+        /*scale 배수*/
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>변형 전 객체</h2>
+    <div class="a">Hello World</div>
+
+    <h2>transformㅣ rotate(20degree)</h2>
+    <div class="b">Hello World</div>
+
+    <h2>transformㅣ translateX(50px)</h2>
+    <div class="c">Hello World</div>
+
+    <h2>transformㅣ scale(1.5)</h2>
+    <div class="d">Hello World</div>
+  </body>
+</html>

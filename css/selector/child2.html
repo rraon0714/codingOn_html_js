@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연결 선택자 자식, 후손, 형제 선택</title>
+    <style>
+      /*section 모든 목록 ul에 적용*/
+      /*section ul {
+        border: 1px solid blue;
+      }*/
+      /*section 하위 자식에게만 속성 부여*/
+      section > ul {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>행복 펜션 예약 방법 및 가격</h1>
+      <ul>
+        <li>예약 방법</li>
+        <ul>
+          <li>직접 통화</li>
+          <li>홈페이지 신청</li>
+        </ul>
+        <li>요금</li>
+        <ul>
+          <li>1인ㅣ 40,000원</li>
+          <li>2인ㅣ 60,000원</li>
+          <li>3인ㅣ 80,000원</li>
+        </ul>
+      </ul>
+    </section>
+  </body>
+</html>

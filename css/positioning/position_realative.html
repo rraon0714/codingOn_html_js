@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position 속성</title>
+    <style>
+      .box1 {
+        width: 100px;
+        background-color: green;
+        padding: 20px;
+        float: left;
+        margin-right: 10px;
+      }
+      .box2 {
+        width: 200px;
+        background-color: blueviolet;
+        padding: 20px;
+        float: left;
+        /*box1과 관계를 맺어서 box1을 기준으로 속성이 적용되어 배치됨*/
+        /*- 는 반대로 배치 ex. left 50 반대 방향으로 -50 이동*/
+        position: relative;
+        top: 30px;
+        left: -59px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 500px;
+        height: 500px;
+        border: 1px solid #222;
+        /*부모 요소를 realtive로 해줄 경우 기준이 된다*/
+        position: relative;
+      }
+      #container div {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 10px;
+      }
+      #item1 {
+        background-color: coral;
+        position: relative;
+        top: 30px;
+        left: 50px;
+      }
+      #item2 {
+        background-color: yellow;
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+      }
+      #item3 {
+        background-color: green;
+        position: fixed;
+        right: 100px;
+        top: 100px;
+      }
+      body{
+        height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="item1">item1</div>
+      <div id="item2">item2</div>
+      <div id="item3">item3</div>
+    </div>
+  </body>
+</html>

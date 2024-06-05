@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자 (::)</title>
+    <style>
+        ul li{
+            margin: 12px;
+        }
+        /*after 요소 내용 뒤에 contents 추가 / before contents 앞에 content 추가*/
+        ul .new::after{
+            /*기존에 없던 내용 추가*/
+            content: "NEW";
+            background-color: red;
+            color: #f2f2f2;
+            /*em: 0,8*16px의 크기만큼 축소*/
+            font-size: 0.8em;
+            border-radius: 3px;
+            margin: 0 5px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>상품 목록</h2>
+    <ul>
+        <li class="new">라면</li>
+        <li>콩나물</li>
+        <li>두부</li>
+        <li>커피</li>
+    </ul>
+</body>
+</html>

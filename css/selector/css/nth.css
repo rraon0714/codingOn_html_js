@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.contents{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.contents :first-child{
+    color: red;
+}
+
+.contents p:nth :nth-of-type(3){
+    background-color: green;
+}
+
+.contents p:nth-child(3) {
+    background-color: yellow;
+}
+
+.contents :last-child{
+    color: blue;
+} 
