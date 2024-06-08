@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#content {
+  width: 1000px;
+  margin: 30 auto;
+}
+
+#content h1 {
+  text-align: center;
+}
+
+#content .product_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#content .product_list li {
+  float: left;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#content .product_list li img{
+    float: left;
+}
+
+#content .product_list .detail {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  top: 200px;
+  transition: all 0.7s ease-out;
+}
+
+#content .product_list li:hover .detail {
+  transform: translateY(-200px);
+}
+
+#content .product_list .detail h2,
+p {
+  color: #f2f2f2;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 순서
+li(부모) -> position: relative, oveflow, flow: left
+li(자식) -> detail absolute, position:absolute
+li(hover)-> transform: translatey(-20px) 양수일 때는 위로 상승
+이미지 크기 (300x200px detail 300x200px 
+*/

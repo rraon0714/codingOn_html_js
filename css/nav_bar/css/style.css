@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+ul li {
+  list-style: none;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: rgb(7, 7, 62);
+}
+
+header #logo {
+  width: 250px;
+  float: left;
+  line-height: 80px;
+  padding-left: 30px;
+}
+
+header #logo h1 a {
+  color: skyblue;
+}
+
+header #logo h1 a:hover {
+  color: aliceblue;
+}
+
+header nav ul {
+  padding-left: 100px;
+}
+
+header nav {
+  width: 700px;
+  float: right;
+  line-height: 80px;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 0 30px;
+}
+
+header nav ul li:hover {
+  background-color: rgb(106, 106, 231);
+}

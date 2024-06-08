@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .content:first-child{color: red} -> 왜 h2, p 둘다 인가?????? */
+/* content: 이랑 content : 이랑 차이?????? */
+.content :first-child {
+  color: red;
+}
+
+.content :nth-child(3) {
+  background-color: #00ff00;
+}
+
+.content p:nth-of-type(3) {
+  background-color: #ffff00;
+}
+
+.content :nth-child(2n+1) {
+  background-color: aqua;
+}
+
+.content :last-child {
+  color: blue;
+}

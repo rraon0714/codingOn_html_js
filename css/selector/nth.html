@@ -2,28 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>가상 선택자 : nth</title>
     <style>
       table {
-        border: 1px solid #ccc;
+        border: 1px solid black;
         border-collapse: collapse;
       }
-      table td {
-        border: 1px solid #ccc;
+      td {
         padding: 5px 10px;
+        border: 1px solid black;
       }
-      /*tr 요소 중에서 n번쨰 요소: 2n 0부터 시작*/
-      /*table tr:nth-of-type(2n){
-            background-color: #ccc;
-        }*/
-      /*table tr:nth-of-type(2n+1){
-            background-color: blue;
-        }*/
-
-      /*부모 (table)요소 안에 있는 모든 요소*/  
-      table tr:nth-child(2n_1) {
-        background-color: #ccc;
+      tr:nth-of-type(2n) {
+        background-color: bisque;
+      }
+      tr:nth-of-type(2n + 1) {
+        background-color: coral;
       }
     </style>
   </head>
@@ -46,7 +41,7 @@
         <td>브로콜리</td>
       </tr>
       <tr>
-        <td>아스파라거스</td>
+        <td>적포도주</td>
       </tr>
     </table>
   </body>

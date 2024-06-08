@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+ul li {
+    list-style: none;
+}
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(13, 13, 51);
+}
+header #logo {
+    width: 20%;
+    float: left;
+    line-height: 80px;
+    padding-left: 40px;
+}
+header #logo h1 a {
+    color: skyblue;
+}
+header #logo h1 a:hover {
+    color: #f2f2f2;
+}
+header nav {
+    width: 75%;
+    float: right;
+    line-height: 80px;
+}
+header nav ul {
+    padding-left: 300px;
+}
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    display: block;
+    padding: 0 30px;
+}
+header nav ul li:hover {
+    background-color: skyblue;
+}
+#main {
+    width: 1000px;
+    margin: 30px auto;
+}
+#main #contents {
+    width: 800px;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid black;
+    margin-top: 300px;
+}
+footer ul {
+    padding: 10px;
+}
+footer ul li {
+    float: left;
+    border-right: 1px solid #797979;
+}
+footer ul li:last-child {
+    border: none;
+}
+footer ul li a {
+    color: #797979;
+    padding: 10px;
+}
+/* index style  */
+#main #contents h1 {
+    text-align: center;
+    margin: 20px;
+}
+#main #contents .main_img {
+    width: 500px;
+    margin: 0 auto;
+}
+#main #contents .main_img img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* product style  */
+#contents #watermelon, #strawberry {
+    height: 350px;
+}
+#contents #watermelon img,#strawberry img {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+#contents #watermelon p, #strawberry p{
+    line-height: 1.7;
+}
+
+/* board style */
+#contents h2 {
+    text-align: center;
+}
+#contents table {
+    width: 700px;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    margin: 30px;
+}
+#contents table thead {
+    background-color: #eee;
+}
+#contents table th,td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+#contents table td:nth-child(2) {
+    text-align: left;
+}
+
+/* login style */
+#contents h1 {
+    text-align: center;
+}
+#contents form {
+    width: 440px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#contents form ul {
+    padding: 20px 40px;
+}
+#contents form ul li {
+    margin: 20px;
+}
+#contents form ul li label {
+    width: 80px;
+    float: left;
+}
+#contents form input[type='text'],[type='password'] {
+    width: 200px;
+    height: 25px;
+    padding: 4px;
+}
+#contents form input[type='submit'],[type='reset'] {
+    padding: 5px 8px;
+}
+
+/* footer style */
