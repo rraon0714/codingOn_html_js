@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>코딩온 쇼핑몰</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/c442a16723.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!--시멘틱(seamentic)-->
-    <div id="container">
-      <header>
-        <nav class="navbar">
-          <main class="navbar_logo">
-            <a href="./index.html">shopOn</a>
-          </div>
-          <ul class="navbar_menu">
-            <li><a href="./home.html">홈</a></li>
-            <li>
-              <a href="./product.html">상품 소개</a>
-            </li>
-            <li><a href="./board.html">게시판</a></li>
-            <li>
-              <a href="./login.html">로그인</a>
-            </li>
-          </ul>
-          <!-- 아이콘 영역 -->
-           <a href="#" class="navbar_toggleBtn"><i class="fa-solid fa-bars"></i></a>
-          
-        </nav>
-      </header>
-      <main id="main">
-        <section id="contents">
-          <h2>쇼핑몰에 오신것을 환영합니다.</h2>
-          <div class="main_img">
-            <img src="./images/hangers.jpg" alt="쇼핑사진" />
-          </div>
-        </section>
-      </main>
-      <footer>
-        <ul id="footer_menu">
-          <li><a href="#">쇼핑몰 소개 </a></li>
-          <li><a href="#">개인정보 처리방침 </a></li>
-          <li><a href="#">이용 약관 </a></li>
-          <li><a href="#">사이트맵</a></li>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopOn 쇼핑몰</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/187dabceeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="./index.html">shopOn</a> 
+        </div>
+        <ul class="navbar_menu">
+          <li><a href="./index.html">홈</a></li>
+          <li><a href="./product.html">상품 소개</a></li>
+          <li><a href="./board.html">게시판</a></li>
+          <li><a href="./login.html">로그인</a></li>
         </ul>
-      </footer>
-    </div>
-  </body>
+        <!-- 바 아이콘 -->
+        <a href="#" class="navbar_toggleBtn">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="contents">
+        <h2>shopOn에 오신 것을 환영합니다.</h2>
+        <div class="main_pic">
+          <img src="./images/store.png" alt="상점 이미지" 
+              width="800" height="600">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul id="footer_menu">
+        <li><a href="#">쇼핑몰 소개</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">이용 약관</a></li>
+        <li><a href="#">사이트 맵</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
 </html>
