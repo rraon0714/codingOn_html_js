@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/* 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* 모바일 기준 */
+/* header style */
+
+header .navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(9, 9, 114);
+  padding: 8px 24px;
+}
+
+header .navbar_logo {
+  font-size: 24px;
+}
+
+header .navbar_logo a:hover {
+  color: skyblue;
+}
+/* ul에 크기를 줘서 속성 적용 */
+header .navbar_menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header .navbar_menu li {
+  text-align: center;
+  padding: 10px;
+}
+
+header .navbar_menu li:hover {
+  background-color: skyblue;
+  border-radius: 4px;
+}
+
+#container main {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#container main #contents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#container main #contents h2 {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  height: 150px;
+  border-top: 2px solid black;
+}
+
+footer #footer_menu {
+  margin: 10px 40px;
+}
+
+footer ul {
+  padding: 10px;
+}
+footer ul li {
+  float: left;
+  border-right: 1px solid #797979;
+}
+footer ul li:last-child {
+  border: none;
+}
+footer ul li a {
+  color: #797979;
+  padding: 10px;
+}
+
+/* index style */
+
+#main #contents .main_img {
+  width: 400px;
+  margin: 20px auto;
+}
+
+#main #contents .main_img img {
+  width: 400px;
+  height: 350px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    height: 80px;
+  }
+
+  header #logo {
+    height: 80px;
+    margin-top: 0;
+    padding-left: 40px;
+    line-height: 80px;
+  }
+
+  header #logo h1 a {
+    font-size: 38px;
+  }
+
+  header nav {
+    height: 80px;
+    margin-top: 0;
+    line-height: 80px;
+  }
+
+  header nav ul {
+    padding-left: 240px;
+  }
+
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav ul li a {
+    padding: 0 30px;
+  }
+
+  #container #main {
+    width: 1000px;
+  }
+  #main #main #contents {
+    width: 500px;
+  }
+
+  #main #contents h2 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  #main #contents .main_img {
+    width: 550px;
+    margin: 0 auto;
+  }
+  #main #contents .main_img img {
+    width: 550px;
+    height: 500px;
+    border-radius: 10px;
+  }
+}
+
+/*product*/
+#main #content p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  #content #watermelon img,
+  #strawberry img {
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  #content #watermelon h2x,
+  #strawberry h2 {
+    color: red;
+    margin: 5px 0;
+  }
+
+/* 테블릿 기준 */
+@media screen and (min-width: 768px) {
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+  }
+
+  header .navbar_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 150px;
+  }
+
+  header .navbar_menu li {
+    padding: 16px 24px;
+  }
+
+  footer #footer_menu {
+    margin: 10px 40px;
+  }
+
+  #main #contents .main_img {
+    width: 400px;
+    margin: 20px auto;
+  }
+
+  #main #contents .main_img img {
+    width: 400px;
+    height: 350px;
+    border-radius: 4px;
+  }
+}
+
+/* pc 기준 */
+
+@media screen and (min-width: 1024px) {
+  #main #contents .main_img {
+    width: 550px;
+    margin: 30px auto;
+  }
+
+  #main #contents .main_img img {
+    width: 550px;
+    height: 500px;
+    border-radius: 4px;
+  }
+}

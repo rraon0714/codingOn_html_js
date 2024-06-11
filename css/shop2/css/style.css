@@ -51,6 +51,20 @@ header nav ul li a {
 header nav ul li:hover {
     background-color: skyblue;
 }
+
+header .navbar_toggleBtn{
+    position: absolute;
+    right: 30px;
+    /*부모 요소의 상대 크기 1em = 16px */
+    /*1.5 * 16px = 24px  */
+    font-size: 1.5em;
+}
+
+header .navbar_toggleBtn{
+    display: none;
+}
+
+
 #main {
     width: 1000px;
     margin: 30px auto;

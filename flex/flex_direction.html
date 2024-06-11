@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction 예제</title>
+    <style>
+        #wrap{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            /*row: 주 축 지면 방향과 수평인지 수평 방향을 왼쪽에서 오른쪽으로 */
+            /*row reverse: 주 축 지면 방향과 수평인지 수평 방향을 오른쪽에서 왼쪽으로*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column; 주 축 지면 방향을 위쪽으로*/
+            /*flex-direction: column-reverse; 주 축 지면 방향을 아래에서 위쪽으로*/
+
+            flex-direction: column-reverse;
+        }
+
+        #wrap div{
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>flex direction 속성</h1>
+    <div id="wrap">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: pink;">D</div>
+    </div>
+</body>
+</html>

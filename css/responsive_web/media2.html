@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query 예제</title>
+    <style>
+      /*모바일 기준에서 점점 커져나가는 것으로 설정 */
+      /*모바일 기준으로 할 떄는 media를 생략해도 된다. */
+        /*@media screen and (max-width: 767px) {*/
+           body{
+            background: url(./images/flower.jpg) no-repeat;
+            /*화면을 배경으로 꽉 채우는 명령어 */
+            background-size: cover;
+           } 
+      /*}*/
+
+      @media screen and (min-width: 768px) {
+        body {
+          background: url(./images/lighthouse.jpg) no-repeat;
+          background-size: cover;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        body {
+          background: url(./images/work.jpg) no-repeat;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>반응형 웹 페이지</h1>
+  </body>
+</html>

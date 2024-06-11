@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 모바일 기준 해상도 768 이하 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+  width: 100%;
+  margin: 0 auto; 
+  background-color: red; 
+}
+
+header{
+    height: 100px;
+    border: 3px solid white;
+}
+
+main{
+    height: 600px;
+    border: 3px solid white;
+}
+
+footer{
+    height: 100px;
+    border: 3px solid white;
+}
+
+/* tablet 기준 */
+/* 768 이상 1024 미만*/
+
+@media screen and (min-width: 768px) {
+    #container{
+        background: #0f0f;
+    }
+}
+
+/* pc 기준 */
+/* 1024 이상  */
+
+@media screen and (min-width: 1024px){
+    #container{
+        background: blue;
+    }    
+}

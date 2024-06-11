@@ -2,35 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>상품소개</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/c442a16723.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="container">
       <header>
-          <div id="logo">
-              <h1>
-                  <a href="./index.html">shopOn</a>
-              </h1>
+        <nav class="navbar">
+          <div class="navbar_logo">
+            <a href="./index.html">shopOn</a>
           </div>
-          <nav>
-              <ul>
-                  <li><a href="./index.html">홈</a></li>
-                  <li><a href="./product.html">상품소개</a></li>
-                  <li><a href="./board.html">게시판</a></li>
-                  <li><a href="./login.html">로그인</a></li>
-              </ul>
-          </nav>
+          <ul class="navbar_menu">
+            <li><a href="./home.html">홈</a></li>
+            <li>
+              <a href="./product.html">상품 소개</a>
+            </li>
+            <li><a href="./board.html">게시판</a></li>
+            <li>
+              <a href="./login.html">로그인</a>
+            </li>
+          </ul>
+          <!-- 아이콘 영역 -->
+        </nav>
       </header>
       
-      <div id="main">
+      <main id="main">
           <section id="content">
               <h1 class="product_h1">상품소개</h1>
               <div id="watermelon">
+            <div>    
             <img
             src="./images/watermelon.png"
             alt="수박"
             />
+          </div>
           <h1>수박(watermelon)</h1>
           <p>
             대개 <b>수박</b>이라 하면 <strong>수박</strong>이라는 식물의 열매를
@@ -46,10 +53,12 @@
         </div>
         
         <div id="strawberry">
+          <div>
           <img
           src="./images/strawberry.png"
           alt="딸기"
           />
+        </div>
         <h1>딸기</h1>
         <p>
           학문적 관점에 따라 딸기를 과일, 과채류(채소) 등으로 분류한다. 대한민국 법적으로는 부가가치세법 시행규칙 제24조 2항에서는 과일 또는 농업통계조사 규칙 제2조에서는 과채류 등으로 분류한다. 
@@ -59,7 +68,7 @@
         </p>
       </div>    
     </section>
-    </div>
+      </main>
     <footer>
         <ul id="footer_menu">
             <li><a href="#">쇼핑몰 소개 </a></li>

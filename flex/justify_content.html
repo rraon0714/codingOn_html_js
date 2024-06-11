@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify content 속성 예제</title>
+    <style>
+        #wrap{
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #333;
+            background-color: #eee;
+            display: flex;
+            /*justify-content: center;-> 주 축 방향을 중앙을 기준으로 한다.*/ 
+           /* justify-content: flex-end;*-> 끝을 맞추고 균등하게 정렬한다./
+           /* justify-content: flex-start; -> 주 축 방향을 시작을 기준으로 한다.*/
+           /* justify-content: right; -> 주 축 방향을 시작을 오른족을 기준으로 한다.*/
+           /* justify-content: left; -> 주 축 방향을 시작을 왼쪽을 기준으로 한다.*/
+           /* justify-content: space-between; 처음과 끝을 채운다 -> 주 축 방향을 끝을 기준으로 한다.*/
+            
+           justify-content: center;
+        }
+
+        #wrap div{
+            width: 100px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>justify content 속성</h1>
+    <div id="wrap">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: pink;">D</div>
+    </div>
+</body>
+</html>
