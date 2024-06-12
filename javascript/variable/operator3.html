@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>복합 연산자</title>
+  </head>
+  <body>
+    <h2>연산자 예제</h2>
+
+    <script>
+        //console.log("100" + "20");
+        
+        let n1 = "10";
+        let n2 = "4";
+        // Number: 문자를 +(실수형을) 숫자로 변환하는 함수
+        n1 = Number(n1);
+        n2 = Number(n2);
+        
+        console.log(n1+n2);
+        console.log(n1/n2);
+
+        //parseInt() : 문자나 실수형을 정수를 숫자로 변환
+        console.log("몫: " + parseInt(n1 / n2));
+        console.log("나머지: " + n1 % n2);
+
+
+        
+
+
+
+        //복합 대입 연산자
+       let value = 100;
+       //value = value + 4;
+       value += 4;
+       document.write(value + "<br>"); 
+
+       value -= 4;
+       document.write(value + "<br>"); 
+
+       value *= 4;
+       document.write(value + "<br>"); 
+
+       value /= 4;
+       document.write(value + "<br>");
+ 
+       value %= 4;
+       document.write(value + "<br>");
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교, 논리 연산자</title>
+</head>
+<body>
+   <script>
+      let num1 = 8, num2 = 5 ;
+
+      //비교 연산자 > , ==, >= 
+
+      //논리 연산 (비교 연산이 2개 이상)
+      //논리곱(변수 둘 다 참일 때): &&, 논리합(변수 하나는 참이고 하나는 거짓이어도 참) ||
+      //논리 부정(변수가 같은지 확인할 때 ===, !=== )
+
+      console.log((num1>num2) && (num1===num2));
+      console.log((num1>num2) || (num1===num2));
+      console.log(!(num1 === num2));
+
+      //조건 연산자 비교문 > 참 거짓
+      //let result;
+      //result = (10 > 11) ? "참입니다" : "거짓입니다";
+
+      let result = (10 === 11) ? "참입니다" : "거짓입니다";
+      document.write("결과값: " + result +"<br>");
+
+      let fatherAge = 47;
+      let motherAge = 49;
+      let value;
+      value = (fatherAge > motherAge) || (motherAge===49) ? "t":"f";
+      document.write("결과값: ", value);
+
+
+
+   </script>
+</body>
+</html>

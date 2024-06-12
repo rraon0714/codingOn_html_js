@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>산술 연산자</title>
+  </head>
+  <body>
+    <script>
+      //산술 연산자
+      console.log(3 + 4);
+      console.log(3 - 4);
+      console.log(3 * 4);
+      console.log(3 / 4);
+      console.log(3 % 2);
+
+      //숫자 변수 2개 할당
+      let n1 = 10;
+      let n2 = 4;
+
+      console.log(n1+n2);
+      console.log(n1-n2);
+      console.log(n1*n2);
+      console.log(n1/n2);
+      console.log(n1%n2);
+      
+      //평균 계산하기
+      //변수 이름 규칙: 의미있게 짓기 (가독성), camel 표기법
+      //변수 이름 오류 사항: 띄어쓰기, 숫자로 시작x
+      let engScore = 80;
+      let mathScore = 75;
+      let totalScore = engScore+mathScore;  
+
+      console.log(totalScore);  
+
+      document.write("합계: "+totalScore);
+      document.write("<br>");
+
+      //평균 구하기
+      document.write("평균: "+totalScore/2);
+
+      // 청바지 구매
+      let jean =0;
+      //jean = jean+1;
+      //증가연산자: ++ / 후 감소연산자: 변수 -- , 선 감소연산자: --변수;
+      //후 증가연산자 변수++. 선 증가연산자 ++ 변수;
+      jean++;
+      ++jean;
+      jean--;
+      --jean;  
+
+      console.log(jean);
+
+      document.write("<br>=======================<br>");  
+      let num1 = 10;
+      let result1;
+      
+
+      result1 = num1++;
+      //num1 = result1에 대입된 후 1 증가 (후치 연산)
+      //num1 = (선치 연산) result1에 1 증가 후 출력 
+      result1 = num1;
+      document.write(result1);  
+
+    </script>
+  </body>
+</html>
