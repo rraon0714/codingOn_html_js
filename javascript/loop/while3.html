@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복문 제어</title>
+  </head>
+  <body>
+    <script>
+      /* 'Y' = "계속 진행"
+          'N' = "반복 중단"
+          그 외의 키 = "키를 잘못 눌렀습니다."
+       */
+      while (true) {
+        let key = prompt("계속 반복하시겠습니까?", "Y or N");
+
+        if (key === "Y" || key === "y") {
+          alert("계속 반복");
+        } else if (key === "N" || key === "n") {
+          alert("반복 중단");
+          break;
+        } else {
+          alert("키를 잘 못 눌렀습니다.");
+        }
+      }
+      document.write("프로그램 종료");
+    </script>
+  </body>
+</html>

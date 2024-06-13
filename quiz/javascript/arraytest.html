@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //7개의 색상을 담고 있는 배열 선언
+
+      //index가 2인 값 출력
+      //좋아하는 색을 마지막에 추가한 후 배열 출력
+      //black 이 몇 번째 인덱스에 있는지 출력
+
+      let color = ["red", "blue", "pink", "puple", "yellow", "green", "gray"];
+      document.write(color[2]);
+
+      color.push("black");
+      document.write("<br>" + color + "<br>");
+
+      document.write(color.indexOf("black")+"<br>");
+
+      let color2 = color.reverse();
+      document.write(color2+"<br>");  
+      document.write(color+"<br>");
+
+      document.write(color2.pop()+"<br>");
+      document.write(color+"<br>");
+    </script>
+  </body>
+</html>

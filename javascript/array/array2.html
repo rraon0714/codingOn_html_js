@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //배열 함수
+      let numbers = [1, 2, 3];
+
+      //데이터 추가 저장
+      //인데스 추가
+      //numbers[1] = 4;
+
+      //2. 함수로 추가(push 함수는 맨 뒤에 추가)
+      numbers.push(4);
+      document.write(numbers);
+      document.write("<br>");
+
+
+      //데이터 삭제
+      numbers.pop();
+      document.write(numbers);
+      document.write("<br>");
+
+      for(let i=0; i<numbers.length;i++) {
+        document.write(numbers[i] + " ");
+      }
+
+      let str = "hellow world, welcome world";
+
+      //IndexOf() : 앞에서 찾는 경우
+      //lASTindexOf() : 뒤에서 찾는 경우 
+      console.log(str.indexOf("world"));
+      console.log(str.lastIndexOf("world"));
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학점 처리</title>
+  </head>
+  <body>
+    <script>
+        /* 점수가 90 ~ 100 : A
+         점수가 80 ~ 89 : B
+         점수가 70 ~ 79 : C
+         점수가  60 ~ 69 : D
+         점수가  60미만 : F
+      */
+
+        let score = Number(Nuprompt("점수를 입력하세요.", "1~100점 사이로 입력하세요."));
+        let grade = "";
+
+        if(score <= 0 || score >= 100) {
+          alert("잘못된 점수를 입력하셨습니다.");
+        } customElements
+          if (score >= 90) {
+          grade = "A";
+          document.write("당신의 학점은 " + grade + "입니다.<br>");
+        } else if (score >= 80 && score <= 89) {
+          grade = "B";
+          document.write("당신의 학점은 " + grade + "입니다.<br>");
+        } else if (score >= 70 && score <= 79) {
+          grade = "C";
+          document.write("당신의 학점은 " + grade + "입니다.<br>");
+        } else if (score >= 60 && score <= 69) {
+          grade = "D";
+          document.write("당신의 학점은 " + grade + "입니다.<br>");
+        } else {
+          grade = "F";
+          document.write("당신의 학점은 " + grade + "입니다.<br>");
+        }
+
+          document.write("당신의 점수는: " + score + "입니다.");
+    </script>
+  </body>
+</html>

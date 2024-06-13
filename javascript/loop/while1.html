@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    // 반복문 while
+    /*
+    while(조건식) {
+       실행문(true일 경우 실행)
+    }
+    */
+    /*let i = 0;
+
+    while(i < 10) {// i = 10일 때 10보다 크다는 조건이 맞지 않기 때문에 10에서 탈출
+      console.log("안녕<br>" + i+"<br>");
+      i++; 
+    }*/
+
+    //1부터 10까지 더하기 
+    let i = 1;
+    let sumVal = 0;
+    
+    
+    while(i <= 10) {
+        sumVal += i;
+        console.log("i: "+i+ ", sumVal",sumVal);
+        i++;
+    }
+    console.log("합계: " + sumVal);
+    
+  </script>  
+</body>
+</html>

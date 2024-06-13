@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열 객체</title>
+  </head>
+  <body>
+    <script>
+      /*let std1 = 80;
+      let std2 = 90;
+      let std3 = 70;
+
+      console.log(std1 + std2 + std3);*/
+
+      /*
+     배열의 이름이 같고, 메모리의 연속적인 공간을 차지
+     메모리상 흩어져있다.
+     자료형 배열 이름 = [값1]
+     값에 접근할 때 인덱스(위치) 사용
+     */
+
+      let std = [80, 90, 70];
+      console.log(std[0]);
+      console.log(std[1]);
+      console.log(std[2]);
+
+      // 선언과 초기화
+      // 선언과 함께 초기화
+      /*let cart = ["딸기", "콩나물", "계란"];
+      document.write(cart);
+      console.log(cart);
+      // 원하는 위치의 객체 출력
+      console.log(cart[1]);
+      // 배열의 크기를 알고 싶을 때 변수 이름.length
+      console.log(cart.length);*/
+
+      //빈 배열을 생성(데이터 저장)
+      let seasons = [];
+      seasons [0] = "봄";
+      seasons [1] = "여름";
+      seasons [2] = "가을";
+      seasons [3] = "겨울";
+
+      //데이터 수정
+      seasons [0] = "spring";   
+
+      console.log(seasons);
+      //document.write(seasons);
+      
+      for(let i = 0; i < seasons.length; i++) {
+         document.write(seasons[i] + "<br>");
+      }
+      
+    </script>
+  </body>
+</html>
