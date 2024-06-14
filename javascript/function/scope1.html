@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>범수 유효 범위</title>
+</head>
+<body>
+   <script>
+     let one = function() {
+        //지역 변수
+        //지역 변수는  함수나 제어문 안에서 생성 호출되면 소멸
+        let x = 1;
+        x ++;
+        return x;
+     }
+     console.log(one());
+
+   </script> 
+</body>
+</html>

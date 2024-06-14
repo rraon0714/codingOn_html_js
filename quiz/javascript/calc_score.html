@@ -7,37 +7,39 @@
   </head>
   <body>
     <script>
-        /* 점수가 90 ~ 100 : A
-         점수가 80 ~ 89 : B
-         점수가 70 ~ 79 : C
-         점수가  60 ~ 69 : D
-         점수가  60미만 : F
-      */
+      /*
+      
+      90~100 - A학점
+      80~89 - B학점
+      70~79 - C학점
+      60~69 - D학점
+      60미만 - F학점
+     */
 
-        let score = Number(Nuprompt("점수를 입력하세요.", "1~100점 사이로 입력하세요."));
-        let grade = "";
-
-        if(score <= 0 || score >= 100) {
-          alert("잘못된 점수를 입력하셨습니다.");
-        } customElements
-          if (score >= 90) {
+      let score = Number(prompt("당신의 점수를 입력하세요", "1~100"));
+      let grade = ""; //문자 초기화-문자가 없음
+      //예외(오류) 처리
+      if (score < 0 || score > 100 || isNaN(score)) {
+        alert("점수 범위를 초과했습니다.");
+      } else {
+        if (score >= 90 && score <= 100) {
           grade = "A";
-          document.write("당신의 학점은 " + grade + "입니다.<br>");
-        } else if (score >= 80 && score <= 89) {
+          document.write(grade + "학점<br>");
+        } else if (score >= 80) { 
           grade = "B";
-          document.write("당신의 학점은 " + grade + "입니다.<br>");
-        } else if (score >= 70 && score <= 79) {
+          document.write(grade + "학점<br>");
+        } else if (score >= 70) {
           grade = "C";
-          document.write("당신의 학점은 " + grade + "입니다.<br>");
-        } else if (score >= 60 && score <= 69) {
+          document.write(grade + "학점<br>");
+        } else if (score >= 60) {
           grade = "D";
-          document.write("당신의 학점은 " + grade + "입니다.<br>");
+          document.write(grade + "학점<br>");
         } else {
           grade = "F";
-          document.write("당신의 학점은 " + grade + "입니다.<br>");
+          document.write(grade + "학점<br>");
         }
-
-          document.write("당신의 점수는: " + score + "입니다.");
+        document.write("점수는 " + score + "점입니다.");
+      }
     </script>
   </body>
 </html>

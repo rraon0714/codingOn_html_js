@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 예제</title>
+</head>
+<body>
+    <h2>함수의 선언과 호출</h2>
+
+   <script>
+    /*function keyword 함수 이름(매개변수) {
+        실행문(기능 구현)
+    }
+    */
+
+    //매개 변수가 없는 함수
+     /*function sayHello() {
+        document.write("안녕하세요.<br>");
+     }*/
+
+     //이름이 없는 함수
+     let sayHello = function() {
+        document.write("안녕하세요.<br>");
+     }
+
+     //매개 변수 입력 값이 있는 함수
+     /*function sayHello2(name) {
+        document.write("안녕하세요."+name+"<br>");
+     }*/
+
+     //이름이 없는 함수 
+     let sayHello2 = function(name) {
+        document.write("안녕하세요."+name+"<br>");
+     }
+
+     let oneUp = function(x){
+        document.write(x+1+"<br>");
+     }
+     
+
+     //함수 호출 실행
+     sayHello();
+     sayHello2(" 이순신");
+     sayHello2(" 홍길동");
+     
+     oneUp(10);
+
+     
+   </script> 
+</body>
+</html>

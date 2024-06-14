@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch 예제</title>
+  </head>
+  <body>
+    <script>
+      //실행문이 동일할 경우 case: 붙여서 사용  
+      let food = "수박";
+      switch (food) {
+        case "바나나":
+        case "수박":
+          document.write("과일입니다.<br>");
+          break;
+        case "양파":
+          document.write("야채입니다.<br>");
+          break;
+
+        default:
+          document.write("과일, 채소가 아닙니다.<br>");
+      }
+    </script>
+  </body>
+</html>

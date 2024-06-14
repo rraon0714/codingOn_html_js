@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval 함수 사용</title>
+</head>
+<body>
+  <script>
+    /*let greeting = function() {
+        document.write("안녕하세요<br>");
+    }*/
+    // 화살표 함수
+    let greeting = () =>  {
+        document.write("안녕하세요<br>");
+    }
+    
+    //greeting();
+    //매개 함수 콜백 함수(함수의 매개 인자가 함수)
+    setInterval(greeting,2000);
+
+
+  </script>
+</body>
+</html>

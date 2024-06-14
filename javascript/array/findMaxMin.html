@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 최대값, 최소값</title>
+</head>
+<body>
+    <h2>배열의 최대값, 최소값 계산</h2>
+  <script>
+    let scores = [70, 80, 90, 65, 77, 44];
+    //비교할 기준값
+    let maxVal = scores[0];
+    for(let i=1;i < scores.length;i++) {
+        //기준값과 큰 값을 maxVal와 비교
+        if(maxVal < scores[i]) {
+            maxVal = scores[i];
+        }
+    }
+    document.write("최대값: " + maxVal +"<br>");
+    // 70 < 80 = maxval 
+    // 80 < 90 = maxval 
+    // 90 < 65 = maxval
+    // 90 < 77 = maxval
+
+    //최소값 
+    let minVal = scores[0];
+    for(let i=1;i < scores.length;i++) {
+        //기준값과 큰 값을 maxVal와 비교
+        if(minVal > scores[i]) {
+            minVal = scores[i];
+        }
+    }
+    document.write("최소값: " + minVal+ "<br>");
+    
+    let minVal2 = scores[5];
+    for(let i=0;i < scores.length;i++) {
+        //기준값과 큰 값을 maxVal와 비교
+        if(minVal > scores[i]) {
+            minVal = scores[i];
+        }
+    }
+    document.write("최소값: " + minVal);
+    // 70 > 88 = minval 
+    // 70 > 90 = minval 
+    
+  </script>
+</body>
+</html>

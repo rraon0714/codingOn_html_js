@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 생성자 함수</title>
+</head>
+<body>
+    <h2>클래스 정의와 사용</h2>
+
+    <script>
+      /*
+      function 클래스 이름(매개 속성) {// 클래스 이름은 대문자로 시작
+        속성 = 값
+
+        함수 = function(){
+        
+        }
+      }
+      */
+      
+      //new 생성자를 사용해서 객체(instance)를 생성  
+      //heap 메모리에서 객체 생성  
+      function Person (name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      
+      let person1 = new Person("이강인",23);
+      document.write("이름: " + person1.name+"<br>" + "나이: "+ person1.age+"<br>");
+
+      let person2 = new Person("우영우",30);
+      document.write("이름: " + person2.name+"<br>" + "나이: "+ person2.age);
+
+    </script>
+</body>
+</html>

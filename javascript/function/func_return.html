@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return이 있는 함수</title>
+</head>
+<body>
+  <script>
+    //제곱 수를 계산하는 함수 x * x 
+    //매개 변수가 1개인 return이 있는 함수
+    function square(x){
+        return x*x;
+    }
+    let result = square(5);
+    document.write("결과값: "+ result+"<br>");
+
+    //매개 변수가 두 개 있는 경우
+    function addNumber(x,y) {
+        return x+y;
+    }
+    addResult = addNumber(4,5);
+    document.write("결과값: "+ addResult);    
+
+    //undefined (값이 할당되지 않은 경우)
+  </script>  
+</body>
+</html>

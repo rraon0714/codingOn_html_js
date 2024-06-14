@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 에제</title>
+</head>
+<body>
+   <script>
+    /*
+    객체(object)는 여러가지 자료형을 포함하는 복합 자료형이다
+    객체는 속성과 메소드로 구성 (key: value), json (java script of )
+    let 객체 이름 = {
+      속성 이름 : 값;
+      속성 이름 : 값;
+      속성 이름 : function();
+    }
+    */
+
+    //person 객체 만들기
+    let person = {
+       name : "이강인",
+       age: 23,
+       isMarried: false,
+
+       play : function() {
+         alert("goal");
+       }
+
+    }
+
+    //book 객체
+    let book = {
+        title: "웹 표준의 정석",
+        athor: "고경희",    
+        pages: 600,
+        price: 30000,
+
+        info : function () {
+            //this는 자긱 자신을 가져옴
+            alert(this.title+"이 책의 분량은 총 "+this.pages+"입니다.");
+        }
+    }
+
+    document.write("제목: "+ book.title+"<br>");
+    document.write("가격: "+ book.price+"원"+"<br>");
+    book.info();
+
+    // 사용할 때는 객체이름.속성;
+    /*console.log("이름: "+ person.name);
+    console.log("나이: "+ person.age);
+    console.log("결혼 여부: "+ person.isMarried);*/
+    //person.play();
+
+   </script> 
+</body>
+</html>

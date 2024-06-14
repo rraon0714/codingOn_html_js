@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 관련 메소드 함수</title>
+</head>
+<body>
+  <script>
+    let str = "happy day~!";
+    //영어를 대문자 변환 touppercase
+    //문자열 객체.함수();
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    //위치. IndexOf() 앞에서 찾음
+    //lastIndexOF(); 뒤에서 찾음
+    console.log(str.indexOf('p'));
+    console.log(str.lastIndexOf('p'));
+
+    // 글자 앞에 replace("old","now");
+    console.log(str.replace('y', 'i'));
+
+    //글자를 분리 - 구분 기호(금액문자, ',' )
+    //문자열이 배열로 전환 인덱싱 가능
+    console.log(str.split(" "));
+    console.log(str.split(" ")[0]);
+    console.log(str.split(" ")[1]);
+
+    //좌우의 공, 백을 제거 trim()
+    let str2 = "   happy day~!";
+    console.log(str2);
+    console.log(str2.trim());
+  </script>  
+</body>
+</html>
