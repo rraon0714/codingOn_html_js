@@ -10,34 +10,34 @@
 
     <script>
       let score = [80, 75, 90, 85];
-      
+
       let sumVal = 0;
-      for(let i = 0; i < score.length; i++) {
+      for (let i = 0; i < score.length; i++) {
         sumVal = sumVal + score[i];
-        }
-        document.write("총점: "+ sumVal+ "점<br>");
+      }
+      document.write("총점: " + sumVal + "점<br>");
 
       //평균 계산
       //평균 = 총점 / 개수
       let average = sumVal / score.length;
-      document.write("평균: "+ average+ "점<br>"); 
+      document.write("평균: " + average + "점<br>");
 
       // 연산
-      document.write(score[0] + score[1]+ "점<br>");
+      document.write(score[0] + score[1] + "점<br>");
 
       // 비교 연산
-      document.write(score[0] > score[1]+ "<br>");
+      document.write(score[0] > score[1] + "<br>");
 
       //document.write(score);
-      document.write(score[1]+ "<br>");
-      for(let i = 0; i < score.length; i++) {
-        document.write(score[i]+ " ");
-        }
-        document.write("<br>");
+      document.write(score[1] + "<br>");
+      for (let i = 0; i < score.length; i++) {
+        document.write(score[i] + " ");
+      }
+      document.write("<br>");
 
-    // for(변수 in 배열 이름) 
-      for(let i in score) {
-        document.write(score[i] + " ")
+      // for(변수 in 배열 이름)
+      for (let i in score) {
+        document.write(score[i] + " ");
       }
     </script>
   </body>
