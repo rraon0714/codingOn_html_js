@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 자료형</title>
+</head>
+<body>
+    <h2>객체 자료형</h2>
+   <script>
+    //객체(object)  프로그램에서 인식할 수 있는 모든 대상
+    //복합 자료형(변수, 배열, 함수) => json 형태, key 콜론 값
+    let car = {
+       brand: "ionic6",
+       color: "silver",
+       cc: 2500,
+
+       charge: function() {
+        alert("전기를 충전합니다.")
+       }
+    }
+
+
+    document.write(`브랜드 이름:  ${car.brand}<br>`);
+    document.write(`색상:  ${car.color}<br>`);
+    document.write(`배기량:  ${car.cc}<br>`);
+    car.charge();
+
+   </script> 
+</body>
+</html>

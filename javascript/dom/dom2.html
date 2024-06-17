@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>태그와 노드</title>
+  </head>
+  <body>
+    <div id="parent">
+      Text
+      <div id="two">div 두번째 Text</div>
+      <div>div 세번째 Text</div>
+    </div>
+
+    <script>
+      // HTMLCollection - tag 요소만 포함
+      // NodeList - tag와 그 하위의 텍스트까지 포함
+      let parent = document.getElementById("parent");
+      //console.log(parent); //부모포함 하위 자식(태그)
+      let children = parent.children;
+      //console.log(children); // 자식요소만(태그)
+      let childNodes = parent.childNodes;
+      //console.log(childNodes);
+
+      //태그와 텍스트 생성하기
+      //자식 추가(태그와 텍스트)
+      //- 추가할 부모선택(접근) -> 추가할 자식생성(태그와 텍스트) -> 자식을 붙여주기(연결)
+      let child1 = document.createElement("div");
+      child1.innerText = "네번째 Text";
+      parent.appendChild(child1);
+    </script>
+  </body>
+</html>

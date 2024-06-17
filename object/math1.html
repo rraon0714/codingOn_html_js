@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math 객체</title>
+</head>
+<body>
+  <h2>Math 객체의 주요 함수</h2>
+  <script>
+    // round: 정수로 반올림
+    document.write(`반올림: ${Math.round(1.609)}<br>`)
+    document.write(`올림: ${Math.ceil(1.609)}<br>`)
+    document.write(`내림(버림): ${Math.floor(1.609)}<br>`)
+    // 양수는 양수로 음수도 양수로 변환함
+    document.write(`절대값: ${Math.abs(-100)}<br>`)
+    // 0.0<= 무작위수 < 1
+    document.write(`무작위수: ${Math.random()}<br>`)
+
+    // eval()함수 - 인자(매개값)로 문자열 표현식을 수식으로 계산함
+    document.write(`eval(): ${eval("10+20")}<br>`)
+
+    // 1~10까지의 자연수 중 무작위수 추출하기
+    //let rand = Math.floor(Math.random()*10) + 1;
+    let rand = Math.ceil(Math.random()*10);
+    document.write(`자연수: ${rand}<br>`);
+
+    //주사위 10번 던지기
+    for(let i=1; i <= 10; i++){
+      let dice = Math.floor(Math.random()*6) + 1;
+      document.write(`주사위 눈: ${dice}<br>`);
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서(Document)에 접근 및 제어</title>
+    <style>
+      div {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box" id="blue">1</div>
+      <div class="box" id="red">2</div>
+      <div class="box">3</div>
+      <p>행복한 기분</p>
+      <p>즐거운 하루</p>
+    </div>
+
+    <script>
+      //요소에 접근
+      let box1 = document.getElementById("blue");
+      console.log(box1);
+      box1.style.color = "blue";
+
+      //HTMLCollection - HTML 요소가 여러개의 집합으로 존재
+      let boxes = document.getElementsByClassName("box");
+      //console.log(boxes);
+      console.log(boxes[1]);
+
+      //태그 선택
+      let p = document.getElementsByTagName("p");
+      console.log(p);
+
+      //주로 class 선택자에 접근
+      let box2 = document.querySelector("#red");
+      console.log(box2);
+      //box2.style.color = "red";
+      box2.style = "color: red";
+
+      //NoteList - 태그 및 선택자, 텍스트등 모든 요소를 가리킴
+      let boxAll = document.querySelectorAll(".box");
+      console.log(boxAll);
+      boxAll[2].style = "color: orange";
+    </script>
+  </body>
+</html>

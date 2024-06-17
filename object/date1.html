@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Date 객체 사용</title>
-</head>
-<body>
-  <h2>Date 객체</h2> 
+  </head>
+  <body>
+    <h2>Date 객체</h2>
+    <script>
+      let now = new Date();
 
-  <script>
-    let now = new Date();
-    //날짜
-    document.write("현재 년도: " + now.getFullYear()+ "<br>");
-    document.write("현재 월: " + (now.getMonth()+1)+ "<br>");
-    document.write("현재 일: " + now.getDate()+ "<br>");
-    document.write("현재 요일: " + now.getDay()+"<br>");
+      //날짜
+      document.write("현재 년도: " + now.getFullYear() + "<br>");
+      document.write("현재 월: " + (now.getMonth() + 1) + "<br>");
+      document.write("현재 일: " + now.getDate() + "<br>");
+      document.write("현재 요일: " + now.getDay() + "<br>");
 
-    //시간
-    document.write("현재 시간: " + now.getHours()+"<br>");
-    document.write("현재 분: " + now.getMinutes()+"<br>");
-    document.write("현재 초: " + now.getSeconds()+"<br>");
+      //시간
+      document.write("현재 시: " + now.getHours() + "<br>");
+      document.write("현재 분: " + now.getMinutes() + "<br>");
+      document.write("현재 초: " + now.getSeconds() + "<br>");
+      //밀리초로 출력(1970. 1. 1 자정) 1000으로 나눔
+      document.write("현재까지의 시간: " + now.getTime() / 1000 + "<br>");
 
-    //밀리 초로 출력: 1970. 1.1 자정 : 밀리 초(1000)로 출력
-    document.write("현재까지의 시간: " + now.getTime()/1000+"<br>");
+      //일로 환산
+      let day = Math.round(now.getTime() / (1000 * 24 * 60 * 60));
+      document.write("현재까지의 시간: " + day + "일<br>");
 
+      //지나온 시간 계산하기
+      let today = new Date();
+      console.log(today);
+      let theDay = new Date("2024-05-29");
+      console.log(theDay);
 
-    
-
-
-  </script>  
-</body>
+      let passed_time = today.getTime() - theDay.getTime();
+      //밀리초를 일(day)로 환산하고 반올림
+      passed_time = Math.round(passed_time / (1000 * 24 * 60 * 60));
+      document.write(`개강후 현재까지 ${passed_time}일 지났습니다.`);
+    </script>
+  </body>
 </html>

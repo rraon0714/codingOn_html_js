@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>함수의 정의와 호출</h2> 
+  
+  <script>
+    //1을 더하는 함수
+   /* function addOne(x) {
+        return x+1;
+    }*/
+    // 익명 함수
+    /*let addOne = function(x){
+        return x+1;
+    }*/
+    
+    // x는 지역 변수에 해당
+    //지역 변수 x는 값을 반환하고 소멸함
+    let addOne = (x) => {
+        return x+1;
+    }
+    // addOne 호출
+    console.log(addOne(10));
+
+    // 전역 변수: 값이 공유하고 프로그램 종료 시 소멸
+
+    let y= 1;
+    let multifly = function () {
+        y = y*2;
+        return y;
+    }
+    console.log(multifly());
+    console.log(multifly());
+    console.log(multifly());
+    
+  </script>
+</body>
+</html>
