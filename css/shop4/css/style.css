@@ -51,6 +51,10 @@ header .navbar_toggleBtn {
      1.5 * 16 = 24px */
   font-size: 1.5em;
 }
+header .navbar_toggleBtn .active {
+  display: flex;
+}
+
 #container main {
   width: 90%;
   margin: 20px auto;

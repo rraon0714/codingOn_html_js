@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery 예제</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p>showHide/toggle 속성</p>
+    <button type="button" id="btn1">hide</button>
+    <button type="button" id="btn2">show</button>
+    <button type="button" id="btn3">toggle</button>
+
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          $("p").hide(""); // 태그 요소 숨기기, 빈 문자열에 데이터가 들어가면 시간이 추가됨
+        });
+      });
+
+      $(function () {
+        $("#btn2").click(function () {
+          $("p").show(""); // 태그 요소 숨기기, 빈 문자열에 데이터가 들어가면 시간이 추가됨
+        });
+      });
+
+      $(function () {
+        $("#btn3").click(function () {
+          $("p").toggle(""); // 태그 요소 숨기기, 빈 문자열에 데이터가 들어가면 시간이 추가됨
+        });
+      });
+      
+    </script>
+  </body>
+</html>

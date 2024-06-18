@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 태그로 onclick 이동해서 이벤트로 실행  -->
+    <div id="content">
+      <img
+        src="./images/peaches.jpg"
+        alt="복숭아"
+        onclick="chagnePic()"
+        id="fruit"
+      />
+    </div>
+
+    <script>
+      function chagnePic() {
+      let fruitImg = document.querySelector("#fruit");
+      fruitImg.src = "./images/blueberry.jpg";
+      }
+    </script>
+  </body>
+</html>

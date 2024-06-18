@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- js 객체의 속성인 onclick 통해 이동하여 이벤트로 실행  -->
+    <div id="content">
+      <img src="./images/peaches.jpg" alt="복숭아" id="fruit" />
+    </div>
+
+    <script>
+      /*let fruitImg = document.querySelector("#fruit");
+      // changePic 함수 호출
+      //changeImgPic 함수에서 ()를 하면 함수가 맨 위로 올라가서 실행된다.
+      function changePic() {
+        fruitImg.src = "./images/blueberry.jpg";
+      }
+      fruitImg.onClick = changePic;*/
+
+      //toggle
+      let sw = true;
+      fruitImg.onClick = function () {
+        if (sw) {
+          fruitImg.src = "./images/blueberry.jpg";
+          sw = false;
+        } else {
+          fruitImg.src = "./images/peaches.jpg";
+          sw = true;
+        }
+      };
+    </script>
+  </body>
+</html>

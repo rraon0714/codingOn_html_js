@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단 계산기</title>
+  </head>
+  <body>
+    <p>
+      값1:
+      <input type="text" id="v1"/>
+    </p>
+    <p>
+      값2:
+      <input type="text" id="v2" />
+    </p>
+    <p>
+      연산자:
+      <input type="text" id="op" />
+    </p>
+    <p>
+      결과:
+      <input type="text" id="res" />
+    </p>
+    <button type="button" onclick="calc()">계산하기</button>
+    <button type="button" onclick="reset()">취소하기</button>
+
+    <script src="./js/calc.js"></script>
+  </body>
+</html>

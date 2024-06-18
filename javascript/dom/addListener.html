@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEvenListener() 함수 예제</title>
+  </head>
+  <body>
+    <div id="content">
+      <img src="./images/peaches.jpg" alt="복숭아" id="fruit" />
+    </div>
+
+    <script>
+      let fruitImg = document.querySelector("#fruit");
+
+      fruitImg.addEventListener("mouseover", () => {
+        fruitImg.src = "./images/blueberry.jpg";
+      });
+
+      fruitImg.addEventListener("mouseout", function () {
+        fruitImg.src = "./images/peaches.jpg";
+      });
+
+      /*
+
+      function changePic() {
+        fruitImg.src = "./images/blueberry.jpg";
+      }
+
+      function originPic() {
+        fruitImg.src = "./images/peaches.jpg";
+      }
+
+      //on 접두사 생략. 두 번째 인자에 함수 이자에 함수
+      fruitImg.addEventListener("mouseover", changePic);
+
+      //마우스가 이미지에서 벗어났을 때 원래 이미지로 돌아감
+      fruitImg.addEventListener("mouseout", originPic);
+      */
+    </script>
+  </body>
+</html>

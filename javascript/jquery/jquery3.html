@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery 예제</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <input type="text" id="t_input" />
+    <button type="button">입력</button>
+    <p>결과: <input type="text" id="t_output" /></p>
+
+    <script>
+      $(function () {
+        //on 이벤트 속성, 함수
+        $("button").on("click", function () {
+          //val(): 객체의 값을 가져오는 함수
+          let inputVal = $("#t_input").val();
+          //console.log("입력값:" + value);
+
+          $("#t_output").val(inputVal);
+        });
+      });
+    </script>
+  </body>
+</html>
